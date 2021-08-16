@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShowTrackr</title>
+    <link rel="shortcut icon" href="img/title.png ">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/2a4ec46cec.js" crossorigin="anonymous"></script>
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light nav-mystyle" style="background-color: white;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="background-color: yellow;">Show<strong>Trackr</strong></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html" style="color: rgb(139, 139, 139);">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="add.html"  style="color: rgb(139, 139, 139);">Add</a>
+        </li>
+      </ul>
+      <a class="nav-link active" href="login.html" style="color: rgb(139, 139, 139); border-style: dotted; height:40px">Login</a>
+          <a class="nav-link active" href="signup.html" style="color: rgb(139, 139, 139);">Sign up</a>
+      
+    </div>
+  </div>
+</nav>
+<div> 
+  <script>
+var objUser = [
+    {
+      username: "Admin",
+      password: "admin"
+    },
+    {
+      username: "user",
+      password: "user"
+    },
+    {
+      username: "Ahilan",
+      password: "1998"
+    },
+    {
+      username: "Yathu",
+      password: "0320"
+    },
+    {
+      username: "steve",
+      password: "apple"
+    }
+
+  ]
+  function user(){
+    var username = document.getElementById('username').value
+    var password = document.getElementById('password').value
+
+    for (var i = 0; i < objUser.length; i++) {
+    if(username == objUser[i].username){
+      if (username == objUser[i].username && password == objUser[i].password) {
+        alert(username + " " + "Login Successful")
+        window.open('index.html')
+        return
+      }
+
+      else {
+        alert("password incorrect")
+        return
+      }
+    }
+    else{
+        }
+    }
+    alert("you are not subscribed!")
+    return
+};
+
+
+
+  </script>
+<body>
+     <div class="container">
+            <div class="row">
+              <div class="col">
+              </div>
+              <div class="col order-5">
+              </div>
+              <div class="col order-1"> 
+               <div class="card signin">
+<article class="card-body">
+	<h4 class="card-title text-center"><strong>Log in</strong></h4>
+	<p class="text-success text-center" style="display: none;">Some message goes here</p>
+	<form>
+    <div class="d-flex justify-content-center">
+      <span class="border">
+      <span style="outline: white;" class="" id="basic-addon1">@</span>
+      <input type="text" id="username" value="" class="form-control-sm" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">  
+    </span>
+    </div> 
+    <p></p>
+    <div class="d-flex justify-content-center">
+      <span class="border">
+      <span class="" id="basic-addon1"><svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16" transform="rotate(-90)">
+        <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z"/>
+        <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+      </svg></span>
+      <input  type="password" id="password" value="" class="form-control-sm" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+    </span>
+        </div>
+        <p></p>
+        <button onclick="user()"  class="btn btn-success btn-block" style="width: 100%;"> Log in  </button>
+       
+       
+	<p class="text-center"><a href="#" class="btn">Forgot password?</a></p>
+	<p class="text-center"><a href="signup.html" class="btn"><span style="color: rgb(139, 139, 139);">Dont have an account yet?</span onclick="location.href = 'login.html';"><strong>Sign up</strong></a></p>
+  <div class="strike">
+    <span><strong>Or</strong></span>
+ </div>
+ <button class="btn btn-primary btn-social btn-facebook btn-block" style="width: 100%;">
+  <i class="fa fa-facebook fa-fw"></i> Sign in with Facebook</button>
+ <p></p>
+  <button class="btn btn-danger btn-social google-plus btn-block" style="width: 100%;">
+    <i class="icon-google-plus"></i> Sign in with Google</button>
+	</form>
+</article>
+</div>
+              </div>
+            </div>
+          </div>
+</body>
+</html>
