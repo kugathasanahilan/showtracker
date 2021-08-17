@@ -18,6 +18,16 @@
     <source src="audio.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
+    <audio id="audio" controls="" style="width: 100%;"><source src="audio.mp3" type="audio/mpeg">Please update your browser does not support the audio element.</audio>
+    <script type="text/javascript">
+function autoplay(){
+    var r =confirm("Would You Like To AutoPlay Music?");
+    if (r == true) {
+        document.getElementById("audio").play();
+    }
+  }
+</script>
+<script>autoplay();</script>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light nav-mystyle" style="background-color: white;">
